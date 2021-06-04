@@ -6,6 +6,8 @@ Angular Demo for loading feature modules and components from remote
 applications dynamically by utilizing Module Federation which was introduced with
 Webpack 5.
 
+More details in this article series: https://www.angulararchitects.io/aktuelles/the-microfrontend-revolution-module-federation-in-webpack-5/
+
 ## Run the Demo
 
 Open two terminals and start the host application and the microfontend. Both
@@ -21,6 +23,9 @@ module federation in action, open the host app in the browser:
 
 https://localhost:4200
 
+The host app provides links to lazy load a module and a component from the
+remote micro frontend.
+
 ## About Module Federation
 
 ### Problems being solved
@@ -29,8 +34,8 @@ https://localhost:4200
   frontend applications or only parts (modules/ components) of them
 - This approach allows to create seperately compiled and seperately deployed
   Microfrontends. The frontends can expose some or all of their
-  modules/components for other apps to consume at runtime.
-- The remote app URLs to consume exposed modules/components from can be provided
+  modules/components for other apps to consume.
+- The remote app URLs to consume exposed modules/components can be provided
   dynamically at runtime of the host application.
 
 ### Technical Requirements
