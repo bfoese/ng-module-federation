@@ -1,0 +1,17 @@
+<h1>Host Application</h1>
+
+
+<ul>
+  <li><a routerLink="/">Home</a></li>
+  <li *ngFor="let config of dynamicRouteConfig">
+    <a [routerLink]="config.routePath">{{ config.displayName }}</a>
+  </li>
+
+  <li *ngFor="let config of dynamicAppComponents">
+    <a (click)="onLoadRemoteComponent(config.id)">{{ config.displayName }}</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
+
+<ng-container #remoteCmp></ng-container>
