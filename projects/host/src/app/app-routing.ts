@@ -16,7 +16,7 @@ export class AppRouting {
     // {
     //   path: 'profile',
     //   loadChildren: () => loadRemoteModule({
-    //       remoteEntry: 'https://localhost:4201/remoteEntry.js',
+    //       remoteEntry: 'http://localhost:4201/remoteEntry.js',
     //       remoteName: 'micro_frontend',
     //       exposedModule: './Module'
     //     })
@@ -38,7 +38,7 @@ export class AppRouting {
   > = [
     // Remote entries can come from multiple remote URLs. Here we have only one remote URL that exposes a feature module and a component
     {
-      remoteEntry: 'https://localhost:4201/remoteEntry.js',
+      remoteEntry: 'http://localhost:4201/remoteEntry.js',
       remoteName: 'micro_frontend',
       exposedModule: './Module',
       displayName: 'Remote Profile Module',

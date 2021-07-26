@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   > = [
     // Remote entries can come from multiple remote URLs. Here we have only one remote URL that exposes a feature module and a component
     {
-      remoteEntry: 'https://localhost:4201/remoteEntry.js',
+      remoteEntry: 'http://localhost:4201/remoteEntry.js',
       remoteName: 'micro_frontend',
       exposedModule: './FancyMap',
       displayName: 'Remote Map Component',

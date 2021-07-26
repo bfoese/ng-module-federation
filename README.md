@@ -14,6 +14,10 @@ Open two terminals and start the host application and the microfontend. Both
 applications run under different ports:
 
 ```bash
+# run host and remote app concurrently
+npm run start
+
+# or run them seperately
 npm run start:host
 npm run start:mfe
 ```
@@ -21,7 +25,7 @@ npm run start:mfe
 Both applications can be opened in the Browser in standalone mode. To see the
 module federation in action, open the host app in the browser:
 
-https://localhost:4200
+http://localhost:4200
 
 The host app provides links to lazy load a module and a component from the
 remote micro frontend.

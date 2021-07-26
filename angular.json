@@ -70,10 +70,7 @@
           "options": {
             "browserTarget": "micro-frontend:build",
             "extraWebpackConfig": "projects/micro-frontend/webpack.config.js",
-            "port": 4201,
-            "ssl": true,
-            "sslCert": "C:\\dev\\certs\\localhost-fullchain.pem",
-            "sslKey": "C:\\dev\\certs\\localhost-key.pem"
+            "port": 4201
           },
           "configurations": {
             "production": {
@@ -176,10 +173,7 @@
           "options": {
             "browserTarget": "micro-frontend:build",
             "extraWebpackConfig": "projects/host/webpack.config.js",
-            "port": 4200,
-            "ssl": true,
-            "sslCert": "C:\\dev\\certs\\localhost-fullchain.pem",
-            "sslKey": "C:\\dev\\certs\\localhost-key.pem"
+            "port": 4200
           },
           "configurations": {
             "production": {

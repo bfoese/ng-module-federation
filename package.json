@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm run start:mfe\" \"npm run start:host\"",
     "start:host": "ng serve --project=host",
     "start:mfe": "ng serve --project=micro-frontend",
     "build": "ng build",
@@ -30,6 +30,7 @@
     "@angular-devkit/build-angular": "~12.0.3",
     "@angular/cli": "~12.0.3",
     "@angular/compiler-cli": "~12.0.3",
+    "concurrently": "^6.2.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.7.0",
